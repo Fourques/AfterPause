@@ -6,7 +6,8 @@ never evidence that a physical action happened.
 
 ## Demonstration
 
-[Watch or download the 85-second demo](docs/afterpause-demo.mp4).
+[Watch the public demonstration on YouTube](https://www.youtube.com/watch?v=u67KUvwZIWc).
+[Download the 85-second video](docs/afterpause-demo.mp4).
 The video combines actual local browser capture with recorded MCP client results.
 It is not an Alexa device session. Reproduce the protocol checks by running
 `.venv/bin/python demo_evidence.py` while the server is running; results are
