@@ -1,0 +1,249 @@
+{
+  "kind": "synthetic demonstration over real local MCP transport",
+  "events": [
+    {
+      "tool": "create_task",
+      "arguments": {
+        "title": "Demo: pack a bag",
+        "steps": [
+          "Choose a bag",
+          "Pack the charger",
+          "Check keys"
+        ]
+      },
+      "isError": false,
+      "result": {
+        "id": "02af8f7a0852449a9030acea99dfa3f4",
+        "title": "Demo: pack a bag",
+        "steps": [
+          "Choose a bag",
+          "Pack the charger",
+          "Check keys"
+        ],
+        "cursor": 0,
+        "revision": 0,
+        "state": "active",
+        "note": "",
+        "timer": null,
+        "events": [
+          {
+            "kind": "created",
+            "at": 1790756114.9693398
+          }
+        ]
+      }
+    },
+    {
+      "tool": "update_task",
+      "arguments": {
+        "task_id": "02af8f7a0852449a9030acea99dfa3f4",
+        "revision": 0,
+        "action": "confirm_step"
+      },
+      "isError": false,
+      "result": {
+        "id": "02af8f7a0852449a9030acea99dfa3f4",
+        "title": "Demo: pack a bag",
+        "steps": [
+          "Choose a bag",
+          "Pack the charger",
+          "Check keys"
+        ],
+        "cursor": 1,
+        "revision": 1,
+        "state": "active",
+        "note": "",
+        "timer": null,
+        "events": [
+          {
+            "kind": "created",
+            "at": 1790756114.9693398
+          },
+          {
+            "kind": "confirm_step",
+            "at": 1790756114.972245,
+            "note": "",
+            "revision": 1
+          }
+        ]
+      }
+    },
+    {
+      "tool": "update_task",
+      "arguments": {
+        "task_id": "02af8f7a0852449a9030acea99dfa3f4",
+        "revision": 0,
+        "action": "confirm_step"
+      },
+      "isError": true,
+      "result": {
+        "text": [
+          "Error executing tool update_task: This task changed. Read its checkpoint before acting again."
+        ]
+      }
+    },
+    {
+      "tool": "update_task",
+      "arguments": {
+        "task_id": "02af8f7a0852449a9030acea99dfa3f4",
+        "revision": 1,
+        "action": "start_timer",
+        "seconds": 1
+      },
+      "isError": false,
+      "result": {
+        "id": "02af8f7a0852449a9030acea99dfa3f4",
+        "title": "Demo: pack a bag",
+        "steps": [
+          "Choose a bag",
+          "Pack the charger",
+          "Check keys"
+        ],
+        "cursor": 1,
+        "revision": 2,
+        "state": "active",
+        "note": "",
+        "timer": {
+          "due_at": 1790756115.9766212,
+          "step": 1
+        },
+        "events": [
+          {
+            "kind": "created",
+            "at": 1790756114.9693398
+          },
+          {
+            "kind": "confirm_step",
+            "at": 1790756114.972245,
+            "note": "",
+            "revision": 1
+          },
+          {
+            "kind": "start_timer",
+            "at": 1790756114.976622,
+            "note": "",
+            "revision": 2
+          }
+        ]
+      }
+    },
+    {
+      "tool": "update_task",
+      "arguments": {
+        "task_id": "02af8f7a0852449a9030acea99dfa3f4",
+        "revision": 2,
+        "action": "pause",
+        "note": "Charger is on the desk."
+      },
+      "isError": false,
+      "result": {
+        "id": "02af8f7a0852449a9030acea99dfa3f4",
+        "title": "Demo: pack a bag",
+        "steps": [
+          "Choose a bag",
+          "Pack the charger",
+          "Check keys"
+        ],
+        "cursor": 1,
+        "revision": 3,
+        "state": "paused",
+        "note": "Charger is on the desk.",
+        "timer": {
+          "due_at": 1790756115.9766212,
+          "step": 1
+        },
+        "events": [
+          {
+            "kind": "created",
+            "at": 1790756114.9693398
+          },
+          {
+            "kind": "confirm_step",
+            "at": 1790756114.972245,
+            "note": "",
+            "revision": 1
+          },
+          {
+            "kind": "start_timer",
+            "at": 1790756114.976622,
+            "note": "",
+            "revision": 2
+          },
+          {
+            "kind": "pause",
+            "at": 1790756114.978892,
+            "note": "Charger is on the desk.",
+            "revision": 3
+          }
+        ]
+      }
+    },
+    {
+      "tool": "get_checkpoint",
+      "arguments": {
+        "task_id": "02af8f7a0852449a9030acea99dfa3f4"
+      },
+      "isError": false,
+      "result": {
+        "task": {
+          "id": "02af8f7a0852449a9030acea99dfa3f4",
+          "title": "Demo: pack a bag",
+          "steps": [
+            "Choose a bag",
+            "Pack the charger",
+            "Check keys"
+          ],
+          "cursor": 1,
+          "revision": 3,
+          "state": "paused",
+          "note": "Charger is on the desk.",
+          "timer": {
+            "due_at": 1790756115.9766212,
+            "step": 1
+          },
+          "events": [
+            {
+              "kind": "created",
+              "at": 1790756114.9693398
+            },
+            {
+              "kind": "confirm_step",
+              "at": 1790756114.972245,
+              "note": "",
+              "revision": 1
+            },
+            {
+              "kind": "start_timer",
+              "at": 1790756114.976622,
+              "note": "",
+              "revision": 2
+            },
+            {
+              "kind": "pause",
+              "at": 1790756114.978892,
+              "note": "Charger is on the desk.",
+              "revision": 3
+            }
+          ]
+        },
+        "completed_steps": [
+          "Choose a bag"
+        ],
+        "next_step": "Pack the charger",
+        "timer_due": true,
+        "reminder": "Timer expiry is a reminder to check, never confirmation that a step is done."
+      }
+    }
+  ],
+  "protocol": "2025-11-25",
+  "tools": [
+    "list_tasks",
+    "create_task",
+    "get_checkpoint",
+    "update_task"
+  ],
+  "checks": {
+    "stale_completion_rejected": true,
+    "timer_expiry_did_not_advance_step": true
+  }
+}

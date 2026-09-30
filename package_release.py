@@ -9,6 +9,7 @@ FILES = (
     '.gitignore', 'LICENSE', 'README.md', 'requirements.txt', 'core.py',
     'server.py', 'index.html', 'demo_client.py', 'test_core.py',
     'test_transport.py', 'judging-guide.txt', 'package_release.py',
+    'demo_evidence.py', 'docs/afterpause-demo.mp4', 'docs/mcp-demo-evidence.json',
 )
 
 

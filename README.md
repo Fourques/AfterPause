@@ -4,6 +4,15 @@ A local checkpoint companion for interrupted, everyday multi-step tasks. The web
 interface and MCP tools use one SQLite record. A timer is a reminder to check,
 never evidence that a physical action happened.
 
+## Demonstration
+
+[Watch or download the 85-second demo](docs/afterpause-demo.mp4).
+The video combines actual local browser capture with recorded MCP client results.
+It is not an Alexa device session. Reproduce the protocol checks by running
+`.venv/bin/python demo_evidence.py` while the server is running; results are
+written into the ignored `.task` directory. A captured synthetic run is included
+in `docs/mcp-demo-evidence.json`.
+
 ## Run
 
 Python 3.12 is tested. From this directory:
