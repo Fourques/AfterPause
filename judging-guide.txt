@@ -36,7 +36,7 @@ rejection, shared state and origin rejection. It is not a load or security audit
 
 Submission gaps
 - Public video under three minutes, hosted on YouTube or Vimeo.
-- Source repository with a suitable license or private judging access.
+- Source is published at https://github.com/Fourques/AfterPause under MIT.
 - Entrant registration, eligibility confirmation and final submission.
 - Entrant review of submission text, product feedback and binding rules.
 No prizes, customer validation, user adoption or revenue have been established.

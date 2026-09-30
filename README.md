@@ -62,8 +62,10 @@ Browser scenario: load packing example → confirm first step → pause with a n
 Prepared as a potential Alexa+ entry for the Amazon Developer Hackathon:
 https://amazonappdev2026.devpost.com/rules
 
+Source repository: https://github.com/Fourques/AfterPause
+
 Not registered or submitted. Entrant eligibility, final entry approval,
-public source release, demonstration video and payout details remain pending.
+demonstration video and payout details remain pending.
 No prize or income is claimed.
 
 ## Source release
