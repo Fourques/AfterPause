@@ -1,0 +1,51 @@
+AFTERPAUSE — LOCAL JUDGING GUIDE
+
+Entry status: preparation only; not submitted or accepted.
+Proposed track: Alexa+, self-hosted MCP server path.
+
+What this does
+After an interruption, recover what you finished, what is next, and the note
+you left yourself. The browser and a separate MCP client share durable state.
+Expiry of a reminder never proves a real-world action was completed.
+
+Run
+Use Python 3.12. Install requirements.txt in a virtual environment and run
+server.py. Open http://127.0.0.1:8765 in a browser. In a second terminal run
+demo_client.py with the same environment. No paid API or hardware is needed.
+The client is an interactive reference client, not an Alexa or LLM simulation.
+
+Two-minute working demonstration
+0:00–0:20  In the browser, load the packing example and create the task.
+0:20–0:40  Confirm only the first step. Pause with a note describing where
+           the charger is. The next step remains incomplete.
+0:40–1:00  Reload the browser: progress and note remain.
+1:00–1:25  Start demo_client.py, select the same task. Show its completed
+           steps, next step and note. Resume using r.
+1:25–1:45  Set a short reminder with t. Return to the browser after it is due:
+           it asks you to check; it does not advance the task.
+1:45–2:10  In the client, explicitly confirm the next step using d then yes.
+           Refresh the browser and show the shared progress.
+2:10–2:30  Explain that real Alexa linking, remote authentication and device
+           notifications have not been implemented or tested.
+
+Verification
+Run python -m unittest -v test_core.py.
+With server.py running, run python test_transport.py. This creates a synthetic
+task and tests actual Streamable HTTP negotiation, tool discovery, stale-update
+rejection, shared state and origin rejection. It is not a load or security audit.
+
+Submission gaps
+- Public video under three minutes, hosted on YouTube or Vimeo.
+- Source repository with a suitable license or private judging access.
+- Entrant registration, eligibility confirmation and final submission.
+- Entrant review of submission text, product feedback and binding rules.
+No prizes, customer validation, user adoption or revenue have been established.
+
+Product feedback grounded in this implementation
+The official Python MCP SDK supplied FastMCP, Streamable HTTP and ClientSession.
+The server and real client negotiated 2025-11-25. Typed tools were discovered and
+called successfully; structured results were usable by a separate interface.
+The local test environment routed localhost through its HTTP proxy and returned
+502. Disabling environment proxy inheritance for the loopback test client fixed
+that. This is an environment integration observation, not an Amazon outage.
+No Alexa device onboarding or Amazon developer service was tested.
